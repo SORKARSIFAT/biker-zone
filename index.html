@@ -19,17 +19,169 @@
     <script src="https://cdn.tailwindcss.com"></script>
 
     <style>
-        .font-pop{
+        .font-poppins{
             font-family: "Poppins", serif;
         }
     </style>
+
+<script>
+    tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          clifford: '#da373d',
+          'bikerPrimary': '#E76F51',
+          'bikerBg': '#E76F511A'
+        }
+      }
+    }
+  }
+</script>
 </head>
-<body class="font-pop">
-<header>
-    <h1 class="text-3xl">this a daily ui and tailwind website</h1>
+<body class="font-poppins">
+<header class="mx-auto md:container lg:w-10/12 ">
+    
+        <div class="navbar  pt-8 ">
+            <div class="flex-1">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h8m-8 6h16" />
+                  </svg>
+                </div>
+                <ul
+                  tabindex="0"
+                  class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                  <li><a>Home</a></li>
+                  <li><a>Shop</a></li>
+                  <li><a>News</a></li>
+                  <li><a>Contact</a></li>
+                </ul>
+              </div>
+              <a class=" font-bold text-xl">Biker-Zone</a>
+            </div>
+            <div class=" hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                <li><a>Home</a></li>
+                <li><a>Shop</a></li>
+                <li><a>News</a></li>
+                <li><a>Contact</a></li>
+              </ul>
+            </div>
+            <div class="">
+              <a class="btn bg-bikerPrimary hover:bg-bikerPrimary text-white border-none ">Login</a>
+            </div>
+          </div>  
+<!-- slider -->
+        
+            <div class="carousel w-full bg-bikerBg mt-8 lg:h-[450px]">
+                <!-- slide 1 -->
+                <div id="slide1" class="carousel-item relative w-full">
+                     <div class="flex flex-col md:flex-row p-8 lg:p-24">
+                        <!-- text-content -->
+                        <div class="flex-1 space-y-7">
+                         <h2 class=" text-2xl md:text-4xl lg:text-6xl font-bold">Ride-on R15 <br> V4 with Smile</h2> 
+                         <p>Amet minim mollit non deserunullamco 
+est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                 <button class="btn bg-bikerPrimary hover:bg-bikerPrimary text-white">Purchase</button>
+                        </div>
+                         <!-- image-content -->
+                        <div class="flex-1 ">
+                            <img class="w-[400px]" src="/images/slider/bike1.png" alt="" srcset="">
+                        </div>
+                     </div>
+                 
+                  <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                    <a href="#slide3" class="btn btn-circle">❮</a>
+                    <a href="#slide2" class="btn btn-circle">❯</a>
+                  </div>
+                </div>
+
+                <!-- slide 2 -->
+                <div id="slide2" class="carousel-item relative w-full">
+                    <div class="flex flex-col md:flex-row p-8 lg:p-24">
+                        <!-- text-content -->
+                        <div class="flex-1 space-y-7">
+                         <h2 class=" text-2xl md:text-4xl lg:text-6xl font-bold">Ride-on R15 <br> V4 with Smile</h2> 
+                         <p>Amet minim mollit non deserunullamco 
+est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                 <button class="btn bg-bikerPrimary hover:bg-bikerPrimary text-white">Purchase</button>
+                        </div>
+                         <!-- image-content -->
+                        <div class="flex-1 ">
+                            <img class="w-[400px]" src="/images/slider/bike2.png" alt="" srcset="">
+                        </div>
+                     </div>
+                  <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                    <a href="#slide1" class="btn btn-circle">❮</a>
+                    <a href="#slide3" class="btn btn-circle">❯</a>
+                  </div>
+                </div>
+
+                <!-- slider3 -->
+                <div id="slide3" class="carousel-item relative w-full">
+                    <div class="flex flex-col md:flex-row p-8 lg:p-24">
+                        <!-- text-content -->
+                        <div class="flex-1 space-y-7">
+                         <h2 class=" text-2xl md:text-4xl lg:text-6xl font-bold">Ride-on R15 <br> V4 with Smile</h2> 
+                         <p>Amet minim mollit non deserunullamco 
+est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                 <button class="btn bg-bikerPrimary hover:bg-bikerPrimary text-white">Purchase</button>
+                        </div>
+                         <!-- image-content -->
+                        <div class="flex-1 ">
+                            <img class="w-[400px]" src="/images/slider/bike3.png" alt="" srcset="">
+                        </div>
+                     </div>
+                  <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                    <a href="#slide2" class="btn btn-circle">❮</a>
+                    <a href="#slide1" class="btn btn-circle">❯</a>
+                  </div>
+                </div>
+               
+              </div>
+            
+          
+    
 </header>
 
-<main></main>
+<main  class="mx-auto md:container lg:w-10/12 ">
+  <!-- featured bike section -->
+   <section>
+<div class="mt-24 mb-20 text-center space-y-4">
+  <h2 class="text-2xl lg:text-3xl font-bold">Featured Bikes In This Year</h2>
+  <p class="text-sm font-bold text-bikerPrimary"> Best bike collection
+   
+  </p>
+
+</div>
+    <div class="flex flex-col md:flex-col lg:flex-row justify-between items-center mb-24">
+      <div>
+        <img src="/images/others/feature-bike.png" alt="">
+      </div>
+      <div>
+        <img src="/images/others/feature-bike.png" alt="">
+      </div>
+      <div>
+        <img src="/images/others/feature-bike.png" alt="">
+      </div>
+    </div>
+    
+    
+   </section>  
+
+   
+
+</main>
 
 <footer></footer>
 </body>
